@@ -1,0 +1,234 @@
+/* VARIABLES DEFINED */
+
+:root {
+  --color-primary: #003366;
+  --color-secondary: #0091ff;
+
+  --color-bg: #f6f8fa;
+
+  --color-text-primary: #333333;
+  --color-text-secondary: #777777;
+  --color-text-medium: #868686;
+
+  --color-border-pri: #e02020;
+  --color-border-sec: #e2ebf4;
+
+  --text-primary: "Heebo", sans-serif;
+
+  --container-padding: 0 6.5rem;
+  --aside-margin: 40px;
+}
+
+/* COMMON CSS PROPERTIES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+}
+li {
+  display: inline;
+}
+.page {
+  font-family: var(--text-primary);
+}
+.border-top {
+  border-top: 1px solid var(--color-border-sec);
+}
+.border-bottom {
+  border-bottom: 1px solid var(--color-border-sec);
+}
+
+/* NAVBAR */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-primary);
+  padding: var(--container-padding);
+  margin-bottom: 3.5rem;
+  height: 60px;
+  border-bottom: 2px solid var(--color-border-pri);
+}
+.nav-logo a img {
+  width: 180px;
+}
+.nav-items {
+  display: flex;
+}
+.nav-item {
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 40px;
+}
+.nav-item a {
+  color: #a5b6c5;
+}
+.nav-item--active a {
+  color: white;
+}
+.nav-item a:hover {
+  color: white;
+}
+.nav-item--live {
+  display: flex;
+  align-items: center;
+}
+.live-icon {
+  width: 5px;
+  height: 5px;
+  background-color: var(--color-border);
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px #e0202060, 0 0 0 10px #e0202040;
+  margin-right: 15px;
+}
+
+/* MAIN */
+
+.container {
+  margin-bottom: 1rem;
+  padding: var(--container-padding);
+}
+
+/* CONTENT */
+.content {
+  display: flex;
+  width: 100%;
+}
+.main-container {
+  width: 70%;
+}
+.aside-container {
+  width: 30%;
+}
+
+/* GENERAL ASIDE-ARTICLES STYLING */
+.article-container {
+  margin-bottom: var(--aside-margin);
+  color: var(--color-text-primary);
+}
+.article-head {
+  padding: 5px 0;
+  line-height: 22px;
+}
+.article-heading {
+  letter-spacing: 0.18px;
+  font-size: 14px;
+  font-weight: bold;
+  width: fit-content;
+  position: relative;
+}
+.article-heading::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: var(--color-secondary);
+}
+article-ad {
+}
+
+/* PRIMARY ASIDE */
+.article-primary-items {
+}
+.article-primary-item {
+  display: flex;
+  padding: 15px 30px 15px 0px;
+}
+.article-primary-item--img {
+  width: 100px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.article-primary-item--desc {
+  font-weight: bold;
+  /* https://stackoverflow.com/questions/3922739/limit-text-length-to-n-lines-using-csshttps://stackoverflow.com/questions/3922739/limit-text-length-to-n-lines-using-css */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+.article-primary-item--desc:hover {
+  text-decoration: underline;
+}
+
+/* SECONDARY ASIDE */
+.article-secondary-items {
+}
+.article-secondary-item {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.article-secondary-item--desc {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 14px;
+  flex: 1;
+}
+.article-secondary-item span {
+  font-size: 16px;
+  padding-left: 8px;
+}
+.article-secondary-item--img {
+  margin-left: 8px;
+}
+.article-secondary-item--desc:hover,
+.article-secondary-item span:hover,
+.article-secondary-item--img:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  color: var(--color-secondary);
+}
+
+/* DISCLAIMER */
+
+.disclaimer {
+  color: var(--color-text-secondary);
+  font-size: 12px;
+  text-align: center;
+  line-height: 1rem;
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-primary);
+  padding: var(--container-padding);
+  height: 50px;
+}
+.footer-logo a img {
+  width: 150px;
+}
+.footer-items {
+  display: flex;
+}
+.footer-item {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 4px;
+}
+.footer-item a {
+  color: #afbcc8;
+}
+.footer-item a:hover {
+  color: white;
+  text-decoration: underline;
+}
