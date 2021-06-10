@@ -51,9 +51,16 @@ h4 {
   font-size: inherit;
   font-weight: inherit;
 }
+.text-overflow-2-lines {
+  /* https://stackoverflow.com/questions/3922739/limit-text-length-to-n-lines-using-csshttps://stackoverflow.com/questions/3922739/limit-text-length-to-n-lines-using-css */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
 
 /* NAVBAR */
-
 .nav {
   display: flex;
   justify-content: space-between;
@@ -112,7 +119,7 @@ h4 {
 
 /* MAIN CONTAINER */
 .main-container {
-  /* width: 70%; */
+  width: 70%;
   margin-right: 20px;
   color: var(--color-text-primary);
 }
@@ -120,6 +127,7 @@ h4 {
 /* MAIN PRIMARY */
 /* GENERAL */
 .main-pri {
+  min-width: 0;
   width: 100%;
   margin-bottom: 40px;
 }
@@ -160,7 +168,7 @@ h4 {
 .top-news-items-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 20px;
+  gap: 20px;
 }
 .top-news-item:hover > .top-news-item--heading {
   text-decoration: underline;
@@ -169,6 +177,8 @@ h4 {
   position: relative;
 }
 .top-news-item--img {
+  width: 100%;
+  object-fit: cover;
 }
 .top-news-item--tag-box {
   position: absolute;
@@ -196,11 +206,70 @@ h4 {
   line-height: 20px;
   letter-spacing: 0;
   color: var(--color-text-secondary);
-  overflow: hidden;
+}
+
+/* AD CONTAINER */
+.main-ad-container {
+  min-width: 0;
+  width: 100%;
+}
+.span-grid-item {
+  grid-column: 1 / span 2;
+}
+.ad-head {
+  padding: 5px 0;
+  line-height: 22px;
+}
+.ad-heading {
+  letter-spacing: 0.18px;
+  font-size: 14px;
+  font-weight: bold;
+  width: fit-content;
+  position: relative;
+}
+.ad-heading::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: var(--color-secondary);
+}
+.ad-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+.ad-item {
+  min-width: 0;
+  padding: 10px;
+  background-color: var(--color-bg);
+}
+.ad-item--img {
+  width: 100%;
+  object-fit: cover;
+}
+.ad-item--head {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.ad-item--desc {
+  font-size: 16px;
+  padding-left: 8px;
+  line-height: 22px;
+  font-weight: bold;
   text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2; /* number of lines to show */
-  -webkit-box-orient: vertical;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.ad-item:hover * .ad-item--desc {
+  text-decoration: underline;
+}
+.ad-item--right-chev {
+  margin-left: auto;
 }
 
 /* LIVE NEWS SECTION */
@@ -208,16 +277,44 @@ h4 {
   letter-spacing: 0.18px;
   font-size: 14px;
 }
-.main-pri--see-more span:hover {
+.main-pri--see-more:hover > span {
   text-decoration: underline;
 }
 .live-news--right-chev {
   padding-left: 2px;
 }
+.live-news-items-list {
+  display: grid;
+  min-width: 0;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.live-news-item--img-box {
+  position: relative;
+}
+.live-news-item--bg-img {
+  width: 100%;
+  object-fit: cover;
+}
+.live-news-item--img-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.live-news-item--heading {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+}
+.live-news-item:hover > .live-news-item--heading {
+  text-decoration: underline;
+}
 
 /* ASIDE */
 .aside-container {
-  /* width: 30%; */
+  width: 30%;
 }
 
 /* GENERAL ASIDE-ARTICLES STYLING */
@@ -264,14 +361,8 @@ article-ad {
 }
 .article-primary-item--desc {
   font-weight: bold;
-  /* https://stackoverflow.com/questions/3922739/limit-text-length-to-n-lines-using-csshttps://stackoverflow.com/questions/3922739/limit-text-length-to-n-lines-using-css */
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2; /* number of lines to show */
-  -webkit-box-orient: vertical;
 }
-.article-primary-item--desc:hover {
+.article-primary-item:hover > .article-primary-item--desc {
   text-decoration: underline;
 }
 
@@ -297,9 +388,9 @@ article-ad {
 .article-secondary-item--img {
   margin-left: 8px;
 }
-.article-secondary-item--desc:hover,
-.article-secondary-item span:hover,
-.article-secondary-item--img:hover {
+.article-secondary-item:hover > .article-secondary-item--desc,
+.article-secondary-item:hover > .article-secondary-item span,
+.article-secondary-item:hover > .article-secondary-item--img {
   font-weight: bold;
   text-decoration: underline;
   color: var(--color-secondary);
