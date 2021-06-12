@@ -60,6 +60,16 @@ h4 {
   -webkit-line-clamp: 2; /* number of lines to show */
   -webkit-box-orient: vertical;
 }
+.ad-footer {
+  width: 100%;
+}
+.ad-title {
+  text-align: right;
+  font-size: 12px;
+  letter-spacing: 0.15px;
+  font-weight: bold;
+  color: var(--color-text-secondary);
+}
 
 /* NAVBAR */
 .nav {
@@ -284,6 +294,7 @@ h4 {
 }
 .ad-head {
   padding: 5px 0;
+  margin-bottom: 10px;
   line-height: 22px;
 }
 .ad-heading {
@@ -307,6 +318,7 @@ h4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
+  margin-bottom: 10px;
 }
 .ad-item {
   min-width: 0;

@@ -1,0 +1,16 @@
+{
+	"ads": [
+		{
+			"anchorLink":"",
+			"imgSrc":"./res/assets_UI_2/rectangle-copy_4.jpg",
+			"imgAlt":"ad-item-image",
+			"adHeading":"1. Lorem ipsum dolor, sit amet consectetur. Lorem ipsum dolor, sit amet con"
+		},
+		{
+			"anchorLink":"",
+			"imgSrc":"./res/assets_UI_2/rectangle-copy_7.jpg",
+			"imgAlt":"ad-item-image",
+			"adHeading":"2. Lorem ipsum dolor, sit amet consectetur."
+		}
+	]
+}

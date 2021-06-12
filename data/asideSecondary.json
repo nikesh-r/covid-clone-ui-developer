@@ -1,0 +1,18 @@
+{
+	"secondaryAside": [
+		{
+			"anchorLink" : "",
+			"pDescription": "1.",
+			"spanDescription": "Lorem ipsum dolor, consectetur adipisicing elit. Sunt, dolor! Reprehenderit, similique!",
+			"imgSrc": "./res/assets_UI_3/path_9.svg",
+			"imgAlt": "article-item-img"
+		},
+		{
+			"anchorLink" : "",
+			"pDescription": "2.",
+			"spanDescription": "Lorem ipsum dolor, sit amet consectetur.",
+			"imgSrc": "./res/assets_UI_3/path_9.svg",
+			"imgAlt": "article-item-img"
+		}
+	]
+}
