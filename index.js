@@ -151,7 +151,7 @@ const getAdContainer = (adData) => {
 		</a>
 	</div>`;
   adContainerTag += adFooter;
-  console.log(adContainerTag);
+  // console.log(adContainerTag);
   return adContainerTag;
 };
 
