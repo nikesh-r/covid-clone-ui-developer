@@ -393,6 +393,9 @@ h4 {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
+.live-news-item {
+  cursor: pointer;
+}
 .live-news-item--img-box {
   position: relative;
 }
@@ -406,6 +409,28 @@ h4 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* Live News Item Video Container Styling */
+
+.video-popup {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-popup--hidden {
+  display: none;
+}
+.live-news-item--video {
+  width: 80%;
+  height: 80%;
+}
+
 .live-news-item--heading {
   font-size: 16px;
   line-height: 22px;
@@ -537,3 +562,9 @@ article-ad {
   color: white;
   text-decoration: underline;
 }
+
+/* TABLET STYLING */
+/* @media only screen and (max-width: 768px) {
+} */
+
+/* MOBILE STYLING */

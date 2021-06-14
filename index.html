@@ -87,7 +87,7 @@
                   </div>
                   <div class="stat-numbers">
                     <h3>Deaths</h3>
-                    <p class="deaths-num"...</p>
+                    <p class="deaths-num">...</p>
                   </div>
                 </div>
               </div>
@@ -239,43 +239,59 @@
                 </a>
               </div>
               <div class="live-news-items-list">
-                <a href="" class="live-news-item">
+                <!-- <div class="live-news-item">
                   <div class="live-news-item--img-box">
                     <img
                       src="./res/assets_UI_2/rectangle-copy_8.jpg"
-                      alt=""
+                      alt="card-background-img"
                       class="live-news-item--bg-img"
                     />
                     <img
                       src="./res/assets_UI_3/play-button-1.svg"
-                      alt=""
+                      alt="play-button"
                       class="live-news-item--img-play"
                     />
+                    <iframe
+                      class="live-news-item--video"
+                      src="https://www.youtube.com/embed/9KWS7dl_0N8"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
                   </div>
                   <h3 class="live-news-item--heading">
                     Protestors face off with the forces of order in DC and New
                     York, as crowds gather at City Hall in San Francisco face
                     off with the forces of order in DC and New York
                   </h3>
-                </a>
-                <a href="" class="live-news-item">
+                </div>
+                <div class="live-news-item">
                   <div class="live-news-item--img-box">
                     <img
                       src="./res/assets_UI_2/rectangle-copy-2_4.jpg"
-                      alt=""
+                      alt="card-background-img"
                       class="live-news-item--bg-img"
                     />
                     <img
                       src="./res/assets_UI_3/play-button-1.svg"
-                      alt=""
+                      alt="play-button"
                       class="live-news-item--img-play"
                     />
+                    <iframe
+                      class="live-news-item--video"
+                      src="https://www.youtube.com/embed/9KWS7dl_0N8"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
                   </div>
                   <h3 class="live-news-item--heading">
                     Protestors face off with the forces of order in DC and New
                     York, as crowds gather at City Hall in San Francisco
                   </h3>
-                </a>
+                </div> -->
               </div>
             </article>
           </section>
@@ -384,7 +400,18 @@
           <li class="footer-item"><a href="">Unsubscribe</a></li>
         </div>
       </footer>
+
+      <div class="video-popup video-popup--hidden" onclick="closeVideo()">
+        <iframe
+          class="live-news-item--video"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
+
     <script src="index.js" async defer></script>
   </body>
 </html>

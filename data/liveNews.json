@@ -1,0 +1,16 @@
+{
+  "liveNews": [
+    {
+      "bgImgSrc": "./res/assets_UI_2/rectangle-copy_8.jpg",
+      "bgImgAlt": "card-background-img",
+      "videoSrc": "https://www.youtube.com/embed/FcnqFPuhFs0?autoplay=1",
+      "videoHeading": "Protestors face off with the forces of order in DC and New York, as crowds gather at City Hall in San Francisco face off with the forces of order in DC and New York"
+    },
+    {
+      "bgImgSrc": "./res/assets_UI_2/rectangle-copy-2_4.jpg",
+      "bgImgAlt": "card-background-img",
+      "videoSrc": "https://www.youtube.com/embed/xqoLCvsy8_c?autoplay=1",
+      "videoHeading": "Protestors face off with the forces of order in DC and New York, as crowds gather at City Hall in San Francisco"
+    }
+  ]
+}
