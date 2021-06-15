@@ -6,7 +6,10 @@
     <title>LiveNews Everyday</title>
     <link rel="ico/favicon" href="" />
     <link rel="icon" href="./favicon.v1.0.svg" />
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="Live Covid Tracker - Get latest Covid-19 related News and Updates"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -20,7 +23,7 @@
     <link rel="stylesheet" href="styles/mainStyle.v1.0.css" />
   </head>
   <body>
-    <div class="page">
+    <div class="page" id="home">
       <nav class="nav">
         <div class="nav-logo">
           <a href=""><img src="./logo.svg" alt="logo" /></a>
@@ -51,16 +54,16 @@
               </div>
               <div class="dropdown-container">
                 <div class="country-container">
-                  <select name="country" class="dropdown-list country-list">
-                    <!-- <option value="ua">UA</option>
-                    <option value="usa" selected>USA</option> -->
-                  </select>
+                  <select
+                    name="country"
+                    class="dropdown-list country-list"
+                  ></select>
                 </div>
                 <div class="state-container">
-                  <select name="state" class="dropdown-list state-list">
-                    <!-- <option value="ua">UA</option>
-                    <option value="usa">USA</option> -->
-                  </select>
+                  <select
+                    name="state"
+                    class="dropdown-list state-list"
+                  ></select>
                 </div>
               </div>
               <div class="stats-container">
@@ -152,6 +155,10 @@
               </a>
             </article>
           </aside>
+
+          <a href="#home" class="btn-go-top">
+            <img src="./res/assets_UI_3/top-button.svg" alt="go-top-button" />
+          </a>
         </div>
         <div class="disclaimer">
           The information/statistics provided on the site are sourced from
