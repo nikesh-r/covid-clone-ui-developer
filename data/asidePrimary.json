@@ -1,16 +1,34 @@
 {
-	"primaryAside": [
-		{
-			"anchorLink" : "",
-			"imgSrc": "./res/assets_UI_1/rectangle-copy.png",
-			"imgAlt": "",
-			"description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, dolor! Reprehenderit, similique! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, dolor! Reprehenderit."
-		},
-		{
-			"anchorLink" : "",
-			"imgSrc": "res/assets_UI_1/rectangle-copy_3.png",
-			"imgAlt": "",
-			"description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, dolor! Reprehenderit, similique!"
-		}
-	]
+  "primaryAside": [
+    {
+      "anchorLink": "",
+      "imgSrc": "./res/assets_UI_1/rectangle-copy.png",
+      "imgAlt": "",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, dolor! Reprehenderit, similique! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, dolor! Reprehenderit."
+    },
+    {
+      "anchorLink": "",
+      "imgSrc": "res/assets_UI_1/rectangle-copy_3.png",
+      "imgAlt": "",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, dolor! Reprehenderit, similique!"
+    },
+    {
+      "anchorLink": "",
+      "imgSrc": "res/assets_UI_1/rectangle-copy_4.png",
+      "imgAlt": "",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, dolor! Reprehenderit."
+    },
+    {
+      "anchorLink": "",
+      "imgSrc": "res/assets_UI_1/rectangle-copy-2.png",
+      "imgAlt": "",
+      "description": "Lorem ipsum dolor, sit amet consectetur!"
+    },
+    {
+      "anchorLink": "",
+      "imgSrc": "res/assets_UI_1/rectangle-copy_3.png",
+      "imgAlt": "",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+    }
+  ]
 }

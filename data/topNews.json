@@ -1,52 +1,52 @@
 {
-	"topNews": [
-		{
-			"anchorLink": "",
-			"itemImgSrc": "./res/assets_UI_2/rectangle-copy.jpg",
-			"itemImgAlt": "news-item-img",
-			"tagTitle": "World",
-			"newsHeading": "Protestors face off with the forces of order in DC and New York, as crowds gather at City Hall in San Francisco",
-			"newsDescription": "Hundreds of people have been arrested overnight after taking part in protests across America. Hundreds of people have been arrested."
-		},
-		{
-			"anchorLink": "",
-			"itemImgSrc": "./res/assets_UI_2/rectangle-copy-2.jpg",
-			"itemImgAlt": "news-item-img",
-			"tagTitle": "US News",
-			"newsHeading": "Protestors face off with the forces of order in DC and New York, as crowds gather at City Hall in San Francisco",
-			"newsDescription": "Hundreds of people have been arrested overnight after taking part in protests across America."
-		},
-		{
-			"anchorLink": "",
-			"itemImgSrc": "./res/assets_UI_2/rectangle-copy-2.jpg",
-			"itemImgAlt": "news-item-img",
-			"tagTitle": "Business",
-			"newsHeading": "Protestors face off with the forces of order in DC and New York, as crowds gather at City Hall in San Francisco",
-			"newsDescription": "Hundreds of people have been arrested overnight after taking part in protests across America. Hundreds of people have been arrested overnight after taking part in protests across America."
-		},
-		{
-			"anchorLink": "",
-			"itemImgSrc": "./res/assets_UI_2/rectangle-copy.jpg",
-			"itemImgAlt": "news-item-img",
-			"tagTitle": "World",
-			"newsHeading": "Protestors face off with the forces of order in DC and New York, as crowds gather at City Hall in San Francisco",
-			"newsDescription": "Hundreds of people have been arrested overnight after taking part in protests across America. Hundreds of people have been arrested."
-		},
-		{
-			"anchorLink": "",
-			"itemImgSrc": "./res/assets_UI_2/rectangle-copy-2.jpg",
-			"itemImgAlt": "news-item-img",
-			"tagTitle": "US News",
-			"newsHeading": "Protestors face off with the forces of order in DC and New York, as crowds gather at City Hall in San Francisco",
-			"newsDescription": "Hundreds of people have been arrested overnight after taking part in protests across America."
-		},
-		{
-			"anchorLink": "",
-			"itemImgSrc": "./res/assets_UI_2/rectangle-copy-2.jpg",
-			"itemImgAlt": "news-item-img",
-			"tagTitle": "Business",
-			"newsHeading": "Protestors face off with the forces of order in DC and New York, as crowds gather at City Hall in San Francisco",
-			"newsDescription": "Hundreds of people have been arrested overnight after taking part in protests across America. Hundreds of people have been arrested overnight after taking part in protests across America."
-		}
-	]
+  "topNews": [
+    {
+      "anchorLink": "",
+      "itemImgSrc": "./res/assets_UI_2/rectangle-copy.jpg",
+      "itemImgAlt": "news-item-img",
+      "tagTitle": "World",
+      "newsHeading": "Protestors face off with the forces of order in DC and New York, as crowds gather at City Hall in San Francisco",
+      "newsDescription": "Hundreds of people have been arrested overnight after taking part in protests across America. Hundreds of people have been arrested."
+    },
+    {
+      "anchorLink": "",
+      "itemImgSrc": "./res/assets_UI_2/rectangle-copy-2.jpg",
+      "itemImgAlt": "news-item-img",
+      "tagTitle": "US News",
+      "newsHeading": "Protestors face off with the forces of order in DC and New York, as crowds gather at City Hall in San Francisco",
+      "newsDescription": "Hundreds of people have been arrested overnight after taking part in protests across America."
+    },
+    {
+      "anchorLink": "",
+      "itemImgSrc": "./res/assets_UI_2/rectangle-copy.jpg",
+      "itemImgAlt": "news-item-img",
+      "tagTitle": "Business",
+      "newsHeading": "Protestors face off with the forces of order in DC and New York, as crowds gather at City Hall in San Francisco",
+      "newsDescription": "Hundreds of people have been arrested overnight after taking part in protests across America. Hundreds of people have been arrested overnight after taking part in protests across America."
+    },
+    {
+      "anchorLink": "",
+      "itemImgSrc": "./res/assets_UI_2/rectangle-copy-2.jpg",
+      "itemImgAlt": "news-item-img",
+      "tagTitle": "Health",
+      "newsHeading": "Protestors face off with the forces of order in DC and New York, as crowds gather at City Hall in San Francisco",
+      "newsDescription": "Hundreds of people have been arrested overnight after taking part in protests across America. Hundreds of people have been arrested."
+    },
+    {
+      "anchorLink": "",
+      "itemImgSrc": "./res/assets_UI_2/rectangle-copy_3.jpg",
+      "itemImgAlt": "news-item-img",
+      "tagTitle": "Entertainment",
+      "newsHeading": "Protestors face off with the forces of order in DC and New York, as crowds gather at City Hall in San Francisco",
+      "newsDescription": "Hundreds of people have been arrested overnight after taking part in protests across America."
+    },
+    {
+      "anchorLink": "",
+      "itemImgSrc": "./res/assets_UI_2/rectangle-copy-2_3.jpg",
+      "itemImgAlt": "news-item-img",
+      "tagTitle": "Sports",
+      "newsHeading": "Protestors face off with the forces of order in DC and New York, as crowds gather at City Hall in San Francisco",
+      "newsDescription": "Hundreds of people have been arrested overnight after taking part in protests across America. Hundreds of people have been arrested overnight after taking part in protests across America."
+    }
+  ]
 }
