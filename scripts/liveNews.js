@@ -16,11 +16,13 @@ const addLiveNewsItems = (liveNewsData) => {
         <img
           src="${element.bgImgSrc}"
           alt="${element.bgImgAlt}"
+          loading="lazy"
           class="live-news-item--bg-img"
         />
         <img
           src="./res/assets_UI_3/play-button-1.svg"
           alt="play-button"
+          loading="lazy"
           class="live-news-item--img-play"
         />
       </div>

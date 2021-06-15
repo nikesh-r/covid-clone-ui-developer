@@ -21,6 +21,7 @@ const addSecondaryAsideItem = (data) => {
 			<img
 				src="${datum.imgSrc}"
 				alt="${datum.imgAlt}"
+        loading="lazy"
 				class="article-secondary-item--img"
 			/>
 		</a>`;

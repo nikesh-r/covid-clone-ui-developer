@@ -15,6 +15,7 @@ const addPrimaryAsideItem = (data) => {
 			<img
 				src="${datum.imgSrc}"
 				alt="${datum.imgAlt}"
+        loading="lazy"
 				class="article-primary-item--img"
 			/>
 			<p class="article-primary-item--desc text-overflow-2-lines">

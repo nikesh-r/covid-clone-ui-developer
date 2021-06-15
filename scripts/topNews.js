@@ -32,6 +32,7 @@ const getTopNewsItem = (data) => {
 			<img
 				src="${data.itemImgSrc}"
 				alt="${data.itemImgAlt}"
+				loading="lazy"
 				class="top-news-item--img"
 			/>
 			<div class="top-news-item--tag-box">
@@ -61,6 +62,7 @@ const getAdContainer = (adData) => {
 			<img
 				src="${adDatum.imgSrc}"
 				alt="${adDatum.imgAlt}"
+				loading="lazy"
 				class="ad-item--img"
 			/>
 			<div class="ad-item--head">
@@ -70,6 +72,7 @@ const getAdContainer = (adData) => {
 				<img
 					src="./res/assets_UI_3/path_4.svg"
 					alt="right-chevron"
+					loading="lazy"
 					class="ad-item--right-chev"
 				/>
 				</div>
