@@ -474,6 +474,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 111;
 }
 .video-popup--hidden {
   display: none;
