@@ -1,24 +1,56 @@
 // ADD COVID UPDATE DATA
 
+const setToLocalStorage = (key, data) => {
+  return localStorage.setItem(key, JSON.stringify(data));
+};
+
+const getFromLocalStorage = (key) => {
+  const raw = localStorage.getItem(key);
+  if (raw) {
+    return JSON.parse(raw);
+  } else {
+    return null;
+  }
+};
+
 const fetchCountryData = async () => {
-  const dataCountries = await fetch("./data/countries.json");
-  const countryJson = await dataCountries.json();
+  const storedData = getFromLocalStorage("countries");
+  if (storedData) {
+    return storedData;
+  } else {
+    const dataCountries = await fetch("./data/countries.json");
+    const countryJson = await dataCountries.json();
+    setToLocalStorage("countries", countryJson);
+    return countryJson;
+  }
   // console.log(countryJson);
-  return countryJson;
 };
 
 const fetchStateData = async (countryValue) => {
-  const dataStates = await fetch(
-    `https://gist.githubusercontent.com/mshafrir/2646763/raw/8b0dbb93521f5d6889502305335104218454c2bf/states_titlecase.json?country=${countryValue}`
-  );
-  const stateJson = await dataStates.json();
+  const storedData = getFromLocalStorage("states");
+  if (storedData) {
+    return storedData;
+  } else {
+    const dataStates = await fetch(
+      `https://gist.githubusercontent.com/mshafrir/2646763/raw/8b0dbb93521f5d6889502305335104218454c2bf/states_titlecase.json?country=${countryValue}`
+    );
+    const stateJson = await dataStates.json();
+    setToLocalStorage("states", stateJson);
+    return stateJson;
+  }
   // console.log(stateJson);
-  return stateJson;
 };
 
 const fetchCovidData = async (selectedState) => {
-  const dataCovid = await fetch("./data/COVID_US_MAP_DATA.json");
-  const covidJson = await dataCovid.json();
+  const storedData = getFromLocalStorage("covidStats");
+  let covidJson;
+  if (storedData) {
+    covidJson = storedData;
+  } else {
+    const dataCovid = await fetch("./data/COVID_US_MAP_DATA.json");
+    covidJson = await dataCovid.json();
+    setToLocalStorage("covidStats", covidJson);
+  }
   // console.log(selectedState);
   const matchingState = covidJson.US_MAP_DATA.find(
     (state) => state.abbr === selectedState
