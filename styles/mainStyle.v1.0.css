@@ -125,8 +125,28 @@ body {
   height: 5px;
   background-color: var(--color-border-pri);
   border-radius: 50%;
-  box-shadow: 0 0 0 5px #e0202060, 0 0 0 10px #e0202040;
+  box-shadow: 0 0 0 5px #e0202080, 0 0 0 10px #e0202020;
   margin-right: 15px;
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    background-color: var(--color-border-pri);
+    box-shadow: 0 0 0 5px #e0202080, 0 0 0 10px #e0202020;
+  }
+  33.3% {
+    background-color: var(--color-border-pri);
+    box-shadow: 0 0 0 5px #e0202060, 0 0 0 10px #e0202040;
+  }
+  66.6% {
+    background-color: var(--color-border-pri);
+    box-shadow: 0 0 0 5px #e0202040, 0 0 0 10px #e0202060;
+  }
+  100% {
+    background-color: var(--color-border-pri);
+    box-shadow: 0 0 0 5px #e0202080, 0 0 0 10px #e0202080;
+  }
 }
 
 /* PAGE */
@@ -237,6 +257,9 @@ body {
   display: flex;
   min-width: 0;
   min-height: 0;
+}
+.stats-item:hover {
+  box-shadow: -2px 2px 4px var(--color-border-sec);
 }
 .stat-image {
   align-self: flex-end;
